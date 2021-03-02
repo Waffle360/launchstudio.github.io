@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/199fcdd7fd.js" crossorigin="anonymous"></script>  
-   
+    
 
      
 
@@ -24,22 +24,51 @@
         
         </div>
           <div id="buttoncontainer">
-            <button onclick="buttonclick()"><span class="iconify" data-icon="flat-ui:rocket" data-inline="false"></span></button>
-          <button onclick="buttonclick()"><span class="iconify" data-icon="ant-design:file-add-filled" data-inline="false"></span></button>
-        <button onclick="buttonclick()"><span class="iconify" data-icon="carbon:dashboard-reference" data-inline="false"></span></button>
-        
+            <button onclick="buttonclick()" id="run">Run</button>
+          <button onclick="buttonclick()" id="fileadd">Open</button>
+        <button onclick="buttonclick()" id="dashboard">dashboard</button>
+
+
+        <div class="section full-height">
+      	<input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
+      	<label for="modal-btn">Open preferences</label> 		
+      	<div class="modal">		
+	      	<div class="modal-wrap">	
+	<!--<img src="https://d3bl13eilxx6qk.cloudfront.net/provider_venue/CodeOrg.png" alt=""> -->
+	      	<p>Editor settings</p>	  
+       <button onclick="buttonclick2()" id="dashboard">set editor to github theme</button><br>
+       <button onclick="buttonclick3()" id="dashboard">set editor to monokai theme</button><br>
+       <button onclick="buttonclick4()" id="dashboard">set font to small</button><br>
+       <button onclick="buttonclick5()" id="dashboard">set font to medium</button><br>
+       <button onclick="buttonclick6()" id="dashboard">set font to Large </button><br>
+       <button onclick="buttonclick7()" id="dashboard">set font to Ultra large </button>
+       
+      
+<!--<p>hi</p>
+<label class="switch" style="align-items:center; ">
+  
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>  -->     		
+	      	</div>			          		
+      	</div>	
+
+
+			
+		</a>	
+	</div> 
+      </div>
+      
+    
+  </div>
           </div>
   
 
 </div>   
       </header>
       <main>
-        <div id="files">
         
-        </button>
-
-        </div>
-<div id="editor" contenteditable="true" data-placeholder="in case this div is empty">
+<div id="editor" >
 
 </div>
         <iframe id="iframe"></iframe>
