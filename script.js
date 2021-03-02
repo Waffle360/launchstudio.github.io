@@ -1,12 +1,12 @@
 
 var url = null
 const editor = ace.edit('editor')
-document.getElementById('editor').style.fontSize='18px';
+document.getElementById('editor').style.fontSize='16px';
 editor.setTheme("ace/theme/monokai")
 
 editor.session.setMode("ace/mode/html");
  
-editor.setShowPrintMargin(true);
+editor.setShowPrintMargin(false);
 editor.renderer.setShowGutter(true);
 editor.session.setUseWorker(false)
 function createUrl(html) {
@@ -42,3 +42,21 @@ function buttonclick() {
   setIframeUrl(url)
 }
 // Get the modal
+function buttonclick2() {
+editor.setTheme("ace/theme/github") 
+}
+function buttonclick3() {
+editor.setTheme("ace/theme/monokai") 
+}
+function buttonclick4() {
+document.getElementById('editor').style.fontSize='12px';
+}
+function buttonclick5() {
+document.getElementById('editor').style.fontSize='16px';
+}
+function buttonclick6() {
+document.getElementById('editor').style.fontSize='18px';
+}
+function buttonclick7() {
+document.getElementById('editor').style.fontSize='21px';
+}
