@@ -15,9 +15,6 @@ function createUrl(html) {
 }
 
 
-
-
-
 function removeUrl(url) {
   URL.revokeObjectURL(url)
 }
@@ -40,7 +37,9 @@ function buttonclick() {
   removeUrl(url)
   url = createUrl(code)
   setIframeUrl(url)
+  
 }
+// Get the modal
 function buttonclick68() {
   var code = getEditorCode()
   removeUrl(url)
@@ -48,10 +47,19 @@ function buttonclick68() {
   window.open(url);
   
 }
-// Get the modal
-function buttonclick2() {
-editor.setTheme("ace/theme/github") 
+function download_txt() {
+  var textToSave = getEditorCode() ;
+  var hiddenElement = document.createElement('a');
+
+  hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+  hiddenElement.target = '_blank';
+  hiddenElement.download = 'Fincurve.txt';
+  hiddenElement.click();
 }
+
+document.getElementById('test').addEventListener('click', download_txt);
+
+
 function buttonclick3() {
 editor.setTheme("ace/theme/monokai") 
 }
