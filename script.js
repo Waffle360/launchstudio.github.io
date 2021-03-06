@@ -53,7 +53,7 @@ function download_txt() {
 
   hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
   hiddenElement.target = '_blank';
-  hiddenElement.download = 'Fincurve.txt';
+  hiddenElement.download = 'Fincurve.html';
   hiddenElement.click();
 }
 
