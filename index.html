@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width">
     <title>Waffle launch studio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="waffle.jpg" rel="shortcut icon"/>
-
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://kit.fontawesome.com/199fcdd7fd.js" crossorigin="anonymous"></script>  
-    
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
      
 
   </head>
   <body>
-  
-  
+ <!-- <div id="preloder">
+		<div class="loader"><img src="loader.jpg" width="400px"></img></div>
+	</div>-->
+
 
     <header>
          
@@ -24,65 +23,40 @@
          
         </div>
         
-        </div>
+     
           <div id="buttoncontainer">
             <button onclick="buttonclick()" id="run">Run</button>
-          <button onclick="buttonclick()" id="fileadd">Open</button>
-         <button onclick="buttonclick68()" id="dashboard">Showme</button>
+        <button onclick="buttonclick68()" id="dashboard" >Show</button>
+         <button id="test">Save</button>
+        <label for="file-upload" class="custom-file-upload">
+    Upload
+</label>
+<input id="file-upload" type="file" accept=".txt" />
         <button onclick="window.location.href='https://github.com/Launchstudio/Launchstudio.github.io/tree/main';" id="dashboard">Contribute</button>
-
-        <div class="section full-height">
-      	<input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
-      	<label for="modal-btn">Open preferences</label> 		
-      	<div class="modal">		
-	      	<div class="modal-wrap">	
-	<!--<img src="https://d3bl13eilxx6qk.cloudfront.net/provider_venue/CodeOrg.png" alt=""> -->
-	      	<p>Editor settings</p>	  
-       <button onclick="buttonclick2()" id="dashboard">set editor to github theme</button><br>
-       <button onclick="buttonclick3()" id="dashboard">set editor to monokai theme</button><br>
-       <button onclick="buttonclick4()" id="dashboard">set font to small</button><br>
-       <button onclick="buttonclick5()" id="dashboard">set font to medium</button><br>
-       <button onclick="buttonclick6()" id="dashboard">set font to Large </button><br>
-       <button onclick="buttonclick7()" id="dashboard">set font to Ultra large </button>
+        
        
-      
-<!--<p>hi</p>
-<label class="switch" style="align-items:center; ">
-  
-  <input type="checkbox" checked>
-  <span class="slider round"></span>
-</label>  -->     		
-	      	</div>			          		
-      	</div>	
+
+        </div>  
+        
 
 
-			
-		</a>	
-	</div> 
-      </div>
-      
-    
-  </div>
-          </div>
-  
-
-</div>   
       </header>
       <main>
         
-<div id="editor" >
-
+<div id="editor" >&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head&gt;&#10;  &lt;title&gt;Show page&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;script&gt;&#10;&#10;&#10;&#10;&#10;&#10;&lt;/script&gt;&#10;&lt;/html&gt; 
 </div>
+        
         <iframe id="iframe"></iframe>
       
       </main>
- 
+      
       <script
         src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"
         type="text/javascript"
         charset="utf-8"
       ></script>
+      
     <script src="script.js"></script>
-    
+   
   </body>
 </html>
