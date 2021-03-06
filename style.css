@@ -9,8 +9,34 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  
 }
 
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+   background-color: rgb(68, 67, 67);
+  color: rgb(67, 243, 190);
+ font-family: 'Josefin Sans', sans-serif;
+font-size: 16px;
+}
+.custom-file-upload:hover{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+background-color: rgb(67, 243, 190);
+ color:rgb(68, 67, 67);
+ font-family: 'Josefin Sans', sans-serif;
+font-size: 16px;
+}
 
 header {
   height: 90px;
@@ -19,7 +45,6 @@ header {
  
   
 }
-
 
 #logocontainer {
     display: flex;
@@ -39,11 +64,11 @@ header {
 #dashboard {
   padding: 14px 28px;
   border-radius: 5px;
-  background-color: rgb(68, 67, 67);
+   background-color: rgb(68, 67, 67);
   color: rgb(67, 243, 190);
   cursor: pointer;
  font-family: 'Josefin Sans', sans-serif;
- font-size: 16px;
+font-size: 16px;
 }
 
 #dashboard:hover{
@@ -54,6 +79,30 @@ header {
  border-radius: 5px;
  font-family: 'Josefin Sans', sans-serif;
  font-size: 16px;
+}
+#test {
+  padding: 14px 28px;
+  border-radius: 5px;
+  background-color: rgb(68, 67, 67);
+  color: rgb(67, 243, 190);
+  cursor: pointer;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 16px;
+ border: 1px solid #ccc;
+ display: inline-block;
+}
+
+#test:hover{
+ padding: 14px 28px;
+ background-color: rgb(67, 243, 190);
+ color:rgb(68, 67, 67);
+ cursor: pointer;
+ border-radius: 5px;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 16px;
+ border: 1px solid #ccc;
+ display: inline-block;
+    
 }
 #run {
    padding: 14px 28px;
@@ -128,7 +177,7 @@ p{
 
 
 
-/* Please ❤ this if you like it! */
+/* 
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
@@ -192,7 +241,8 @@ p{
   cursor: pointer;
   background-color: #102770;
   color: #ffeba7;
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25); */
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25); 
+
   padding: 14px 28px;
   border-radius: 5px;
   background-color: rgb(68, 67, 67);
@@ -203,7 +253,7 @@ p{
 }
 .modal-btn:not(:checked) + label:hover{
   /*background-color: #ffeba7;
-  color: #102770;*/
+  color: #102770;
   padding: 14px 28px;
   background-color: rgb(67, 243, 190);
  color:rgb(68, 67, 67);
@@ -247,7 +297,7 @@ p{
   justify-content: center;
   align-items: center;
   /*background-color: #102770;
-  color: #ffeba7;*/
+  color: #ffeba7;
    background-color: rgb(68, 67, 67);
   color: rgb(67, 243, 190);
 }
@@ -419,3 +469,100 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 } */
+/* RESET RULES 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --lightgray: #efefef;
+  --blue: steelblue;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.btn-group {
+  text-align: center;
+}
+
+.open-modal {
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: var(--white);
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--lightgray);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+
+
+.page-footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.page-footer span {
+  color: #e31b23;
+}
