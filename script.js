@@ -41,6 +41,13 @@ function buttonclick() {
   url = createUrl(code)
   setIframeUrl(url)
 }
+function buttonclick68() {
+  var code = getEditorCode()
+  removeUrl(url)
+  url = createUrl(code)
+  window.open(url);
+  
+}
 // Get the modal
 function buttonclick2() {
 editor.setTheme("ace/theme/github") 
