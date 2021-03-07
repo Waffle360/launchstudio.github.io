@@ -75,3 +75,14 @@ document.getElementById('editor').style.fontSize='18px';
 function buttonclick7() {
 document.getElementById('editor').style.fontSize='21px';
 }
+document.getElementById('file-upload') 
+            .addEventListener('change', function() { 
+              
+            var fr=new FileReader(); 
+            fr.onload=function(){ 
+                document.getElementById('output') 
+                editor.setValue(fr.result); 
+            } 
+              
+            fr.readAsText(this.files[0]); 
+        }) 
