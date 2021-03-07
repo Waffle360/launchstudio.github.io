@@ -48,12 +48,12 @@ function buttonclick68() {
   
 }
 function download_txt() {
+ var save = prompt("Save file as", "Mylaunch");
   var textToSave = getEditorCode() ;
   var hiddenElement = document.createElement('a');
-
   hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
   hiddenElement.target = '_blank';
-  hiddenElement.download = 'MyWaffle.txt';
+  hiddenElement.download = save + ".txt";
   hiddenElement.click();
 }
 
