@@ -16,7 +16,7 @@ input[type="file"] {
     display: none;
 }
 .custom-file-upload{
-    border: 1px solid #ccc;
+   
     display: inline-block;
     padding: 14px 28px;
     cursor: pointer;
@@ -27,7 +27,7 @@ input[type="file"] {
 font-size: 16px;
 }
 .custom-file-upload:hover{
-    border: 1px solid #ccc;
+    
     display: inline-block;
     padding: 14px 28px;
     cursor: pointer;
@@ -88,7 +88,7 @@ font-size: 16px;
   cursor: pointer;
  font-family: 'Josefin Sans', sans-serif;
  font-size: 16px;
- border: 1px solid #ccc;
+
  display: inline-block;
 }
 
@@ -100,7 +100,7 @@ font-size: 16px;
  border-radius: 5px;
  font-family: 'Josefin Sans', sans-serif;
  font-size: 16px;
- border: 1px solid #ccc;
+
  display: inline-block;
     
 }
