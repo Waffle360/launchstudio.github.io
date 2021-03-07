@@ -53,7 +53,7 @@ function download_txt() {
 
   hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
   hiddenElement.target = '_blank';
-  hiddenElement.download = 'MyLaunch.html';
+  hiddenElement.download = 'MyWaffle.txt';
   hiddenElement.click();
 }
 
