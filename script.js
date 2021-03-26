@@ -41,3 +41,15 @@ class SerialLEDController {
         }
     }
 }
+
+const serialLEDController = new SerialLEDController();
+
+function connect(){
+    serialLEDController.init();
+}
+function switch_on(){
+    serialLEDController.write('1');
+}
+function switch_off(){
+    serialLEDController.write('0');
+}
