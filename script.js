@@ -1,5 +1,5 @@
 "use strict";
-class SerialLEDController {
+class waffle {
     constructor() {
         this.encoder = new TextEncoder();
         this.decoder = new TextDecoder();
@@ -42,14 +42,3 @@ class SerialLEDController {
     }
 }
 
-const serialLEDController = new SerialLEDController();
-
-function connect(){
-    serialLEDController.init();
-}
-function switch_on(){
-    serialLEDController.write('1');
-}
-function switch_off(){
-    serialLEDController.write('0');
-}
